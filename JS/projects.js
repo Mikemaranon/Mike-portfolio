@@ -35,10 +35,12 @@ function renderProjects(repos) {
             <a href="${repo.html_url}" target="_blank">Ver en GitHub</a>
         `;
 
+        console.log(details.innerHTML);
+
         button.addEventListener("click", () => {
-            const isVisible = details.style.display === "block";
-            details.style.display = isVisible ? "none" : "block";
+            details.classList.toggle("open");
         });
+        
 
         // clasificacion según las topics de github
         const topics = repo.topics || [];
