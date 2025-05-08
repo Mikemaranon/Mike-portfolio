@@ -63,9 +63,9 @@ function renderProjects(repos) {
 document.querySelectorAll(".category-toggle").forEach(toggle => {
     toggle.addEventListener("click", () => {
         const content = toggle.nextElementSibling;
-        const isVisible = content.style.display === "block";
-        content.style.display = isVisible ? "none" : "block";
+        content.classList.toggle("open");
     });
 });
+
 
 fetchRepos();

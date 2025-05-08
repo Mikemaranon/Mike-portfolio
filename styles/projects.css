@@ -13,6 +13,7 @@
     cursor: pointer;
     text-align: left;
     transition: background 0.3s;
+    
 }
 
 .category-toggle:hover {
@@ -20,8 +21,16 @@
 }
 
 .category-content {
-    display: none;
+    max-height: 0;
+    overflow: hidden;
     margin-top: 1rem;
+    transition: max-height 0.4s ease, padding 0.4s ease;
+    padding: 0 1rem; /* arranca sin padding */
+}
+
+.category-content.open {
+    max-height: 1000px; /* un número grande para cubrir el contenido */
+    padding: 1rem;
 }
 
 .projects-section h2, .about-section h2, .cv-section h2 {
@@ -32,7 +41,7 @@
 .project-button {
     width: 95%;
     padding: 1.25rem;
-    margin: 0 0 1.25rem 20px;
+    margin: 0 0 5px 20px;
     border: none;
     background: #00cec9;
     color: white;
@@ -49,9 +58,10 @@
 
 .project-details {
     max-height: 0;
+    width: 80%;
     overflow: hidden;
     transition: max-height 0.4s ease, padding 0.4s ease;
-    margin: 0 0 1.25rem 20px;
+    margin: 0 0 1.25rem 40px;
     padding: 0 1.25rem; 
     background: #f1f1f1;
     border-radius: 10px;
