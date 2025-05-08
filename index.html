@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio de Mike Marañón</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/projects.css">
+</head>
+<header>
+    <nav>
+        <a href="#profile">Inicio</a>
+        <a href="#about">Sobre Mi</a>
+        <a href="#projects">Proyectos</a>
+        <a href="#cv">Curriculum</a>
+    </nav>
+</header>
+<body>
+    <div class="container">
+        <!-- 1️. perfil -->
+        <section id="profile" class="profile-section">
+            <img src="assets/prof_pic.jpg" alt="Tu nombre" class="profile-pic">
+            <h1>Mike Marañón</h1>
+            <p class="description">Programador, ingeniero de datos, diseñador web e ingeniero IA. Apasionado por la tecnología y la música.</p>
+            <hr>
+            <div class="contacts">
+                <a href="mailto:tuemail@gmail.com">Gmail</a>
+                <a href="www.linkedin.com/in/mikemaranon" target="_blank">LinkedIn</a>
+                <a href="https://www.infojobs.net/cv/tuusuario" target="_blank">InfoJobs</a>
+                <a href="https://github.com/Mikemaranon" target="_blank">GitHub</a>
+            </div>
+        </section>
+
+        <!-- 2️. sobre Mi -->
+        <section id="about" class="about-section">
+            <h2>Sobre Mi</h2>
+            <p>
+                Soy músico y profesor con experiencia como monitor y formador en diferentes campos tecnológicos y artísticos.
+                Toco la guitarra, piano, saxofón y canto. Me apasiona la enseñanza y disfruto desarrollando soluciones que combinan creatividad y tecnología.
+            </p>
+        </section>
+
+        <!-- 3️. proyectos -->
+        <section id="projects" class="projects-section">
+            <h2>Proyectos Actuales</h2>
+            <div id="projects-list">
+                <div class="category">
+                    <button class="category-toggle">Inteligencia Artificial + Big Data</button>
+                    <div id="ia-bigdata" class="category-content">
+                        <!-- los botones se llenan dinámicamente desde JS -->
+                    </div>
+                </div>
+                <div class="category">
+                    <button class="category-toggle">Proyectos Web</button>
+                    <div id="web-projects" class="category-content">
+                        <!-- los botones se llenan dinámicamente desde JS -->
+                    </div>
+                </div>
+                <div class="category">
+                    <button class="category-toggle">Proyectos Sistemas</button>
+                    <div id="systems-projects" class="category-content">
+                        <!-- los botones se llenan dinámicamente desde JS -->
+                    </div>
+                </div>
+                <div class="category">
+                    <button class="category-toggle">Otros</button>
+                    <div id="other-projects" class="category-content">
+                        <!-- los botones se llenan dinámicamente desde JS -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+
+        <!-- 4️. currículum -->
+        <section id="cv" class="cv-section">
+            <h2>Currículum</h2>
+            <embed src="docs/CV-Mike.pdf" type="application/pdf" width="100%" height="600px" />
+        </section>
+    </div>
+
+    <script src="JS/projects.js"></script>
+    <script src="JS/header.js"></script>
+</body>

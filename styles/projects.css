@@ -1,0 +1,72 @@
+.category {
+    margin-bottom: 1.5rem;
+}
+
+.category-toggle {
+    width: 100%;
+    padding: 1rem;
+    background: #0984e3;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.25rem;
+    cursor: pointer;
+    text-align: left;
+    transition: background 0.3s;
+}
+
+.category-toggle:hover {
+    background: #086dc7;
+}
+
+.category-content {
+    display: none;
+    margin-top: 1rem;
+}
+
+.projects-section h2, .about-section h2, .cv-section h2 {
+    margin-bottom: 1.25rem;
+    font-size: 2rem; 
+}
+
+.project-button {
+    width: 95%;
+    padding: 1.25rem;
+    margin: 0 0 1.25rem 20px;
+    border: none;
+    background: #00cec9;
+    color: white;
+    font-size: 1.25rem;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: left;
+    transition: background 0.3s;
+}
+
+.project-button:hover {
+    background: #00b2b2;
+}
+
+.project-details {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, padding 0.4s ease;
+    margin: 0 0 1.25rem 20px;
+    padding: 0 1.25rem; 
+    background: #f1f1f1;
+    border-radius: 10px;
+    font-size: 1.15rem;
+}
+
+.project-details.open {
+    max-height: 500px;
+    padding: 1.25rem;
+}
+
+.project-details a {
+    display: inline-block;
+    margin-top: 0.75rem;
+    color: #0984e3;
+    text-decoration: none;
+    font-size: 1.15rem;
+}
