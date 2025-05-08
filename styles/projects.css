@@ -5,7 +5,7 @@
 .category-toggle {
     width: 100%;
     padding: 1rem;
-    background: #0984e3;
+    background: #86b2d3;
     color: white;
     border: none;
     border-radius: 10px;
@@ -17,7 +17,7 @@
 }
 
 .category-toggle:hover {
-    background: #086dc7;
+    background: #4d86b7;
 }
 
 .category-content {
@@ -40,10 +40,11 @@
 
 .project-button {
     width: 95%;
-    padding: 1.25rem;
+    height: 55px;
+    padding: 1rem;
     margin: 0 0 5px 20px;
     border: none;
-    background: #00cec9;
+    background: #15b2b0;
     color: white;
     font-size: 1.25rem;
     border-radius: 10px;
@@ -53,7 +54,7 @@
 }
 
 .project-button:hover {
-    background: #00b2b2;
+    background: #118989;
 }
 
 .project-details {

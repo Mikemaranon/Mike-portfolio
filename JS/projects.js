@@ -38,9 +38,18 @@ function renderProjects(repos) {
         console.log(details.innerHTML);
 
         button.addEventListener("click", () => {
-            details.classList.toggle("open");
-        });
+            const parentCategory = button.parentElement;
         
+            // Cerrar todos los project-details dentro de la misma categoría
+            parentCategory.querySelectorAll(".project-details.open").forEach(openDetail => {
+                if (openDetail !== details) {
+                    openDetail.classList.remove("open");
+                }
+            });
+        
+            // Togglear el actual
+            details.classList.toggle("open");
+        });       
 
         // clasificacion según las topics de github
         const topics = repo.topics || [];
@@ -63,9 +72,17 @@ function renderProjects(repos) {
 document.querySelectorAll(".category-toggle").forEach(toggle => {
     toggle.addEventListener("click", () => {
         const content = toggle.nextElementSibling;
+
+        // Primero cerramos todas las categorías abiertas
+        document.querySelectorAll(".category-content.open").forEach(openContent => {
+            if (openContent !== content) {
+                openContent.classList.remove("open");
+            }
+        });
+
+        // Después toggleaseamos la que clickeaste
         content.classList.toggle("open");
     });
 });
-
 
 fetchRepos();
