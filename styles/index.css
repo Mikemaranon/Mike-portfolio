@@ -4,6 +4,18 @@
     --category-padding: 1.5rem;
 }
 
+@media (min-width: 1200px) {
+    :root {
+        --size-base: 1.2rem;
+        --title-size: 1.9rem;
+        --category-padding: 1.4rem;
+    }
+
+    .container {
+        margin-top: 80px;
+    }
+}
+
 @media (max-width: 1200px) {
     :root {
         --size-base: 1.2rem;
