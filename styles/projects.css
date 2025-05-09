@@ -108,3 +108,27 @@
     font-size: 1.05rem;
     color: #e0e0e0; /* un gris clarito para diferenciar del título */
 }
+
+/* languajes */
+
+.languages-list {
+    margin-top: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.language-item {
+    display: flex;
+    align-items: center;
+    font-size: 0.9em;
+    color: #586069;
+}
+
+.language-color {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 6px;
+}
