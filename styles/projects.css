@@ -69,7 +69,7 @@
 }
 
 .category-content.open {
-    max-height: 1000px; /* un número grande para cubrir el contenido */
+    max-height: 3000px; /* un número grande para cubrir el contenido */
     padding: 1rem;
 }
 
