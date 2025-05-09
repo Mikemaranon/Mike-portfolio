@@ -24,47 +24,27 @@ async function fetchRepos() {
 
 function renderProjects(repos) {
     repos.forEach(repo => {
-        const button = document.createElement("button");
+        const button = document.createElement("a");
         button.classList.add("project-button");
-        button.textContent = repo.name;
+        button.href = repo.html_url;
+        button.target = "_blank";
 
-        const details = document.createElement("div");
-        details.classList.add("project-details");
-        details.innerHTML = `
-            <p>${repo.description || "Sin descripción"}</p>
-            <a href="${repo.html_url}" target="_blank">Ver en GitHub</a>
+        // Armamos el contenido interno
+        button.innerHTML = `
+            <div class="project-title">${repo.name}</div>
+            <div class="project-description">${repo.description || "Sin descripción"}</div>
         `;
 
-        console.log(details.innerHTML);
-
-        button.addEventListener("click", () => {
-            const parentCategory = button.parentElement;
-        
-            // Cerrar todos los project-details dentro de la misma categoría
-            parentCategory.querySelectorAll(".project-details.open").forEach(openDetail => {
-                if (openDetail !== details) {
-                    openDetail.classList.remove("open");
-                }
-            });
-        
-            // Togglear el actual
-            details.classList.toggle("open");
-        });       
-
-        // clasificacion según las topics de github
+        // Clasificación según topics de GitHub
         const topics = repo.topics || [];
         if (topics.includes("ai") || topics.includes("bigdata")) {
             categories.ia.appendChild(button);
-            categories.ia.appendChild(details);
         } else if (topics.includes("website")) {
             categories.web.appendChild(button);
-            categories.web.appendChild(details);
         } else if (topics.includes("systems")) {
             categories.systems.appendChild(button);
-            categories.systems.appendChild(details);
         } else {
             categories.other.appendChild(button);
-            categories.other.appendChild(details);
         }
     });
 }
@@ -73,14 +53,14 @@ document.querySelectorAll(".category-toggle").forEach(toggle => {
     toggle.addEventListener("click", () => {
         const content = toggle.nextElementSibling;
 
-        // Primero cerramos todas las categorías abiertas
+        // Cerrar todas las categorías abiertas
         document.querySelectorAll(".category-content.open").forEach(openContent => {
             if (openContent !== content) {
                 openContent.classList.remove("open");
             }
         });
 
-        // Después toggleaseamos la que clickeaste
+        // Togglear la clickeada
         content.classList.toggle("open");
     });
 });

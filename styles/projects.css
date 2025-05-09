@@ -1,5 +1,43 @@
+:root {
+    --size-base: 1.25rem;
+    --title-size: 2rem;
+    --category-padding: 1.5rem;
+}
+
+@media (max-width: 1200px) {
+    :root {
+        --size-base: 1.15rem;
+        --title-size: 1.9rem;
+        --category-padding: 1.4rem;
+    }
+}
+
+@media (max-width: 992px) {
+    :root {
+        --size-base: 1.05rem;
+        --title-size: 1.8rem;
+        --category-padding: 1.3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    :root {
+        --size-base: 0.90rem;
+        --title-size: 1.6rem;
+        --category-padding: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    :root {
+        --size-base: 0.80rem;
+        --title-size: 1.4rem;
+        --category-padding: 0.9rem;
+    }
+}
+
 .category {
-    margin-bottom: 1.5rem;
+    margin-bottom: var(--category-padding)
 }
 
 .category-toggle {
@@ -9,7 +47,7 @@
     color: white;
     border: none;
     border-radius: 10px;
-    font-size: 1.25rem;
+    font-size: var(--size-base);
     cursor: pointer;
     text-align: left;
     transition: background 0.3s;
@@ -34,22 +72,23 @@
 }
 
 .projects-section h2, .about-section h2, .cv-section h2 {
-    margin-bottom: 1.25rem;
-    font-size: 2rem; 
+    margin-bottom: var(--size-base);
+    font-size: var(--title-size);
 }
 
 .project-button {
-    width: 95%;
-    height: 55px;
+    display: block;
+    max-width: 95%;
     padding: 1rem;
-    margin: 0 0 5px 20px;
+    margin: 0 10px 10px 20px;
     border: none;
     background: #15b2b0;
     color: white;
-    font-size: 1.25rem;
+    font-size: var(--size-base);
     border-radius: 10px;
     cursor: pointer;
     text-align: left;
+    text-decoration: none; /* para sacar el subrayado del enlace */
     transition: background 0.3s;
 }
 
@@ -57,27 +96,13 @@
     background: #118989;
 }
 
-.project-details {
-    max-height: 0;
-    width: 80%;
-    overflow: hidden;
-    transition: max-height 0.4s ease, padding 0.4s ease;
-    margin: 0 0 1.25rem 40px;
-    padding: 0 1.25rem; 
-    background: #f1f1f1;
-    border-radius: 10px;
-    font-size: 1.15rem;
+.project-title {
+    font-weight: bold;
+    font-size: var(--size-base);
 }
 
-.project-details.open {
-    max-height: 500px;
-    padding: 1.25rem;
-}
-
-.project-details a {
-    display: inline-block;
-    margin-top: 0.75rem;
-    color: #0984e3;
-    text-decoration: none;
-    font-size: 1.15rem;
+.project-description {
+    margin-top: 0.5rem;
+    font-size: 1.05rem;
+    color: #e0e0e0; /* un gris clarito para diferenciar del título */
 }
