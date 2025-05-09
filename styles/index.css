@@ -65,6 +65,11 @@ body {
     font-size: var(--size-base) 
 }
 
+h2 {
+    font-size: var(--title-size);
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
 .container {
     max-width: 1000px;
     width: 100%;
