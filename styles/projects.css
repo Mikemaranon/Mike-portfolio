@@ -84,7 +84,7 @@
     padding: 1rem;
     margin: 0 10px 10px 10px;
     border: none;
-    background: #15b2b0;
+    background: #3cc9c6;
     color: white;
     font-size: var(--size-base);
     border-radius: 10px;
@@ -95,11 +95,12 @@
 }
 
 .project-button:hover {
-    background: #118989;
+    background: #56acac;
 }
 
 .project-title {
     font-weight: bold;
+    font-size: larger;
     font-size: var(--size-base);
 }
 
@@ -120,9 +121,12 @@
 
 .language-item {
     display: flex;
+    padding: 10px;
+    background-color: #478ecc;
+    border-radius: 11px;
     align-items: center;
     font-size: 0.9em;
-    color: #586069;
+    color: #e4e4e4;
 }
 
 .language-color {
