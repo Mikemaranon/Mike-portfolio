@@ -1,12 +1,12 @@
 :root {
-    --size-base: 1.25rem;
+    --size-base: 1.5rem;
     --title-size: 2rem;
     --category-padding: 1.5rem;
 }
 
 @media (max-width: 1200px) {
     :root {
-        --size-base: 1.2rem;
+        --size-base: 1.4rem;
         --title-size: 1.9rem;
         --category-padding: 1.4rem;
     }
@@ -14,7 +14,7 @@
 
 @media (max-width: 992px) {
     :root {
-        --size-base: 1.1rem;
+        --size-base: 1.3rem;
         --title-size: 1.8rem;
         --category-padding: 1.3rem;
     }
@@ -22,7 +22,7 @@
 
 @media (max-width: 768px) {
     :root {
-        --size-base: 1rem;
+        --size-base: 1.2rem;
         --title-size: 1.6rem;
         --category-padding: 1rem;
     }
@@ -30,7 +30,7 @@
 
 @media (max-width: 480px) {
     :root {
-        --size-base: 0.90rem;
+        --size-base: 1.1rem;
         --title-size: 1.4rem;
         --category-padding: 0.9rem;
     }
@@ -100,14 +100,13 @@
 
 .project-title {
     font-weight: bold;
-    font-size: larger;
     font-size: var(--size-base);
 }
 
 .project-description {
     margin-top: 0.5rem;
     font-size: 1.05rem;
-    color: #e0e0e0; /* un gris clarito para diferenciar del título */
+    color: #f3f3f3; /* un gris clarito para diferenciar del título */
 }
 
 /* languajes */
