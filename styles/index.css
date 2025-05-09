@@ -86,7 +86,23 @@ section {
 }
 
 .profile-section {
+    position: relative;
     text-align: center;
+    overflow: hidden;
+}
+
+.profile-banner {
+    position: absolute;
+    top: 56%;
+    left: 50%;
+    width: 100%;
+    height: 300px;
+    /*background: linear-gradient(135deg, #00b894, #55efc4);*/
+    background-image: url('../assets/sstars.jpg');
+    background-size: cover;
+    background-position: center;
+    transform: translate(-50%, -130%);
+    z-index: 0;
 }
 
 .profile-pic {
@@ -95,6 +111,8 @@ section {
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 1.25rem;
+    position: relative;
+    z-index: 1; /* Esto hace que quede por delante del banner */
 }
 
 .contacts {
