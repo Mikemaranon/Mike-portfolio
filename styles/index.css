@@ -1,3 +1,43 @@
+:root {
+    --size-base: 1.25rem;
+    --title-size: 2rem;
+    --category-padding: 1.5rem;
+}
+
+@media (max-width: 1200px) {
+    :root {
+        --size-base: 1.2rem;
+        --title-size: 1.9rem;
+        --category-padding: 1.4rem;
+    }
+}
+
+@media (max-width: 992px) {
+    :root {
+        --size-base: 1.1rem;
+        --title-size: 1.8rem;
+        --category-padding: 1.3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    :root {
+        --size-base: 1rem;
+        --title-size: 1.6rem;
+        --category-padding: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    :root {
+        --size-base: 0.90rem;
+        --title-size: 1.4rem;
+        --category-padding: 0.9rem;
+    }
+}
+
+/* Styles start here */
+
 body {
     font-family: Arial, sans-serif;
     background: #f9f9f9;
@@ -6,7 +46,7 @@ body {
     padding: 2.5rem; /* antes 2rem */
     display: flex;
     justify-content: center;
-    font-size: 1.25rem; 
+    font-size: var(--size-base) 
 }
 
 .container {
