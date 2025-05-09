@@ -38,3 +38,10 @@ nav a.active::after {
     width: 100%;
     background: black;
 }
+
+/* Ocultar nav en móvil */
+@media (max-width: 768px) {
+    nav {
+        display: none;
+    }
+}
