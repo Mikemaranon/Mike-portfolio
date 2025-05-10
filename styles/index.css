@@ -149,4 +149,42 @@ img {
     margin: 0 auto;
 }
 
+.visit-blog {
+    background: #35c6ff;
+    color: white;
+} .visit-blog:hover {
+    background: #0dabe9;
+}
+
+.return {
+    background: #bfedff;
+    color: black
+} .return:hover {
+    background: #4dc8f8;
+}
+
+.visit-blog, 
+.return {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: var(--font-size-base);
+    font-weight: 600;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s, transform 0.2s;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.visit-blog:hover, 
+.return:hover {
+    transform: translateY(-3px);
+}
+
+.visit-blog-wrapper,
+.return-wrapper {
+    margin-top: 20px;
+    text-align: center;
+}
 

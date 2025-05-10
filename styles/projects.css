@@ -52,12 +52,13 @@
     font-size: var(--size-base);
     cursor: pointer;
     text-align: left;
-    transition: background 0.3s;
+    transition: background 0.3s, transform 0.2s;
     
 }
 
 .category-toggle:hover {
     background: #4d86b7;
+    transform: translateY(-3px);
 }
 
 .category-content {
