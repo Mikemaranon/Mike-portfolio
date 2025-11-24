@@ -1,0 +1,25 @@
+.contact-card {
+    display: grid;
+    gap: 1rem;
+    background: radial-gradient(circle at bottom left, #020617, #020617);
+}
+
+.contact-text {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+.contact-list {
+    display: grid;
+    gap: 0.6rem;
+    font-size: 0.9rem;
+}
+
+.contact-item a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+.contact-item a:hover {
+    text-decoration: underline;
+}

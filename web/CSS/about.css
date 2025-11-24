@@ -1,0 +1,59 @@
+.about-card {
+    display: grid;
+    gap: 1.5rem;
+    background: radial-gradient(circle at top right, #0b1120, #020617);
+}
+
+.about-text {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--text-muted);
+}
+
+.about-text p + p {
+    margin-top: 0.75rem;
+}
+
+.about-highlights {
+    display: grid;
+    gap: 0.75rem;
+    margin-top: 1rem;
+}
+
+.about-highlight {
+    display: flex;
+    gap: 0.65rem;
+    align-items: flex-start;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+.about-highlight-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 999px;
+    background: var(--accent);
+    margin-top: 0.35rem;
+}
+
+.visit-blog-wrapper {
+    margin-top: 1.2rem;
+}
+
+.visit-blog {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.5rem 0.9rem;
+    border-radius: 999px;
+    border: 1px dashed rgba(148, 163, 184, 0.4);
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: var(--accent);
+    background: rgba(15, 23, 42, 0.8);
+}
+
+.visit-blog:hover {
+    border-style: solid;
+    background: rgba(15, 23, 42, 0.95);
+}

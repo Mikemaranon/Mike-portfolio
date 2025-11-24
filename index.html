@@ -1,109 +1,37 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mike Portfolio</title>
-    <link rel="stylesheet" href="styles/index.css">
-    <link rel="stylesheet" href="styles/header.css">
-    <link rel="stylesheet" href="styles/projects.css">
-    <link rel="stylesheet" href="styles/cv.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mike Marañón | Portfolio</title>
+
+    <link rel="icon" type="image/png" href="web/assets/myke_icon.png" />
+    <link rel="shortcut icon" type="image/png" href="web/assets/myke_icon.png" />
+
+
+    <!-- CSS global + por componente -->
+    <link rel="stylesheet" href="web/CSS/layout.css" />
+    <link rel="stylesheet" href="web/CSS/header.css" />
+    <link rel="stylesheet" href="web/CSS/profile.css" />
+    <link rel="stylesheet" href="web/CSS/about.css" />
+    <link rel="stylesheet" href="web/CSS/projects.css" />
+    <link rel="stylesheet" href="web/CSS/cv.css" />
+    <link rel="stylesheet" href="web/CSS/contact.css" />
+    <link rel="stylesheet" href="web/CSS/footer.css" />
 </head>
-<header>
-    <nav>
-        <a href="#profile">Inicio</a>
-        <a href="#about">Sobre Mi</a>
-        <a href="#projects">Proyectos</a>
-        <a href="#cv">Curriculum</a>
-    </nav>
-</header>
 <body>
-    <div class="container">
-        <!-- 1️. perfil -->
-        <section id="profile" class="profile-section">
-            <div class="profile-banner"></div>
-            <img src="assets/prof_pic.jpg" alt="Tu nombre" class="profile-pic">
-            <h1>Mike Marañón</h1>
-            <p class="description">Administrador de Redes, programador, ingeniero de datos, diseñador web y especialista en IA. 
-                Junior apasionado por la tecnología y la música.
-            </p>
-            <hr>
-            <div class="contacts">
-                <a href="mailto:mikemaranonx@gmail.com">Gmail</a>
-                <a href="https://www.linkedin.com/in/mikemaranon/" target="_blank">LinkedIn</a>
-                <!--<a href="https://www.infojobs.net/cv/tuusuario" target="_blank">InfoJobs</a>-->
-                <a href="https://github.com/Mikemaranon" target="_blank">GitHub</a>
-            </div>
-        </section>
+    <div id="app"></div>
 
-        <!-- 2️. sobre Mi -->
-        <section id="about" class="about-section">
-            <p>
-                <h2>Sobre Mí</h2><br>
-                Soy Mike Marañón. Me defino por la curiosidad y las ganas constantes de aprender y crear. 
-                Me apasiona entender cómo funcionan las cosas y buscar siempre una vuelta más eficiente o innovadora. 
-                La tecnología y la música son mis dos grandes motores: disfruto tanto programando soluciones útiles 
-                como tocando en una banda con amigos. Me gusta trabajar en equipo, enfrentar desafíos con cabeza fría 
-                y nunca perder la chispa creativa.<br>
-                <div class="visit-blog-wrapper">
-                    <a href="sites/blog.html" class="visit-blog">Descubre mi marca personal</a>
-                </div>
-            </p>            
-        </section>
-
-        <!-- 3️. proyectos -->
-        <section id="projects" class="projects-section">
-            <h2>Proyectos Actuales</h2>
-                <img class="github-logo" src="https://logo.svgcdn.com/d/github-original.png" alt="GitHub">
-            <br>
-            <div id="projects-list">
-                <div class="category">
-                    <button class="category-toggle">Inteligencia Artificial + Big Data</button>
-                    <div id="ia-bigdata" class="category-content">
-                        <!-- los botones se llenan dinámicamente desde JS -->
-                    </div>
-                </div>
-                <div class="category">
-                    <button class="category-toggle">Proyectos Web</button>
-                    <div id="web-projects" class="category-content">
-                        <!-- los botones se llenan dinámicamente desde JS -->
-                    </div>
-                </div>
-                <div class="category">
-                    <button class="category-toggle">Proyectos Sistemas</button>
-                    <div id="systems-projects" class="category-content">
-                        <!-- los botones se llenan dinámicamente desde JS -->
-                    </div>
-                </div>
-                <div class="category">
-                    <button class="category-toggle">Otros</button>
-                    <div id="other-projects" class="category-content">
-                        <!-- los botones se llenan dinámicamente desde JS -->
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        
-
-        <!-- 4️. currículum -->
-        <section id="cv" class="cv-section">
-            <h2>Currículum</h2>
-        
-            <!-- Solo para desktop/tablet -->
-            <div class="cv-embed">
-                <embed src="docs/CV-Mike.pdf" type="application/pdf" width="100%" height="600px" />
-            </div>
-        
-            <!-- Solo para móvil -->
-            <div class="cv-link">
-                <p>Tu dispositivo no soporta la vista previa. Puedes descargarlo aquí</p><br>
-                <a href="docs/CV-Mike.pdf" target="_blank" class="download-cv">Ver/Descargar CV (PDF)</a>
-            </div>
-        </section>
-        
-    </div>
-
-    <script src="JS/projects.js"></script>
-    <script src="JS/header.js"></script>
+    <!-- JS utilities + components -->
+    <script src="web/JS/utils.js"></script>
+    <script src="web/JS/header.js"></script>
+    <script src="web/JS/profile.js"></script>
+    <script src="web/JS/about.js"></script>
+    <script src="web/JS/projects.js"></script>
+    <script src="web/JS/cv.js"></script>
+    <script src="web/JS/contact.js"></script>
+    <script src="web/JS/footer.js"></script>
+    <!-- Orquestator -->
+    <script src="web/JS/app.js"></script>
 </body>
+</html>
