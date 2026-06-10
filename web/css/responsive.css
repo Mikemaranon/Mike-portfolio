@@ -1,0 +1,175 @@
+@media (max-width: 920px) {
+  .hero-inner,
+  .experience-layout,
+  .contact-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-portrait {
+    width: min(72vw, 300px);
+    justify-self: center;
+  }
+
+  .cv-preview {
+    min-height: 540px;
+  }
+
+  .contact-links {
+    justify-self: stretch;
+    width: 100%;
+  }
+}
+
+@media (max-width: 760px) {
+  .section {
+    min-height: auto;
+    padding: 92px 24px;
+  }
+
+  .hero {
+    min-height: 100vh;
+    padding-bottom: 11vh;
+  }
+
+  .hero-inner {
+    text-align: center;
+    gap: 30px;
+  }
+
+  .hero-copy {
+    display: contents;
+  }
+
+  .hero-portrait {
+    order: -4;
+  }
+
+  .hero .eyebrow {
+    order: -3;
+  }
+
+  .hero h1 {
+    order: -2;
+  }
+
+  .hero-lead {
+    order: -1;
+  }
+
+  .hero-actions {
+    justify-content: center;
+  }
+
+  h1 {
+    font-size: clamp(4rem, 19vw, 6rem);
+  }
+
+  .project-carousel {
+    grid-template-columns: 42px minmax(0, 1fr) 42px;
+    min-height: 300px;
+  }
+
+  .carousel-control {
+    width: 38px;
+    height: 38px;
+    font-size: 1.8rem;
+  }
+
+  .logo-stage img {
+    width: 76%;
+    max-height: 190px;
+  }
+
+  .logo-stage img.project-logo-zertan,
+  .logo-stage img.project-logo-github {
+    max-width: 48%;
+    max-height: 180px;
+  }
+
+  .logo-stage img.project-logo-horizone {
+    width: auto;
+    max-width: 50%;
+    max-height: 180px;
+  }
+
+  .carousel-dots {
+    margin-top: 26px;
+  }
+
+  .desktop-download {
+    display: none;
+  }
+
+  .mobile-download {
+    display: inline-flex;
+    width: max-content;
+    margin-bottom: 22px;
+  }
+
+  .timeline-panel {
+    max-height: none;
+    overflow: visible;
+    padding-right: 0;
+  }
+
+  .cv-preview {
+    display: none;
+  }
+}
+
+
+@media (max-width: 520px) {
+  .section {
+    padding-left: 26px;
+    padding-right: 26px;
+  }
+
+  .contact-links {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .contact-links a {
+    min-height: 48px;
+    padding: 0 12px;
+    justify-content: center;
+  }
+
+  .contact-links a span {
+    display: none;
+  }
+
+  .contact-links img {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+@media (max-width: 520px) {
+  .contact-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: clamp(28px, 11vw, 48px);
+  }
+
+  .contact-links a {
+    width: auto;
+    min-height: auto;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .contact-links a:hover {
+    background: transparent;
+    border-color: transparent;
+  }
+
+  .contact-links img {
+    width: 42px;
+    height: 42px;
+  }
+}

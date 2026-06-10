@@ -1,0 +1,61 @@
+.tech-carousel {
+  position: relative;
+  width: min(100%, 860px);
+  margin-top: 34px;
+  overflow: hidden;
+  mask-image: linear-gradient(90deg, transparent, #000 10%, #000 90%, transparent);
+}
+
+.tech-track {
+  display: flex;
+  width: max-content;
+  animation: techFlow 34s linear infinite;
+  will-change: transform;
+}
+
+.tech-group {
+  display: flex;
+  align-items: center;
+  gap: clamp(24px, 4vw, 42px);
+  padding-right: clamp(24px, 4vw, 42px);
+}
+
+.tech-logo {
+  text-decoration: none;
+  border: 0;
+  background: transparent;
+  width: clamp(42px, 6vw, 62px);
+  height: clamp(42px, 6vw, 62px);
+  display: grid;
+  place-items: center;
+  opacity: 0.78;
+  filter: drop-shadow(0 12px 28px rgba(0, 0, 0, 0.35));
+  transition: opacity 180ms ease, transform 180ms ease;
+}
+
+.tech-logo:focus-visible,
+.tech-logo:hover {
+  opacity: 1;
+  transform: translateY(-2px);
+  outline: none;
+}
+
+.tech-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.tech-logo img[src*="flask"],
+.tech-logo img[src*="github"] {
+  filter: invert(1) brightness(1.8) saturate(0.4);
+}
+
+@keyframes techFlow {
+  from { transform: translate3d(0, 0, 0); }
+  to { transform: translate3d(-50%, 0, 0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tech-track { animation-duration: 90s; }
+}

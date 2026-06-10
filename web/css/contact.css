@@ -1,0 +1,49 @@
+.contact {
+  min-height: 86vh;
+}
+
+.contact-inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 320px);
+  gap: clamp(36px, 8vw, 120px);
+  align-items: center;
+}
+
+.contact-copy p {
+  max-width: 680px;
+}
+
+.contact-links {
+  display: grid;
+  gap: 16px;
+  justify-self: end;
+  width: min(100%, 250px);
+}
+
+.contact-links a {
+  min-height: 56px;
+  width: 100%;
+  justify-content: flex-start;
+  gap: 12px;
+  padding: 0 20px;
+  font-size: 1rem;
+}
+
+
+.contact-links img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.contact-links a[href*="github"] img {
+  filter: invert(1) brightness(1.8);
+}
+
+.contact-links img {
+  filter: none;
+}
+
+.contact-links a[href*="github"] img {
+  filter: none;
+}

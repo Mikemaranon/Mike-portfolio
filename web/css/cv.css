@@ -1,0 +1,54 @@
+.cv-preview {
+  min-height: 640px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.028);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 26px 80px rgba(0, 0, 0, 0.24);
+}
+
+.cv-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 14px 16px;
+  color: var(--muted);
+  font-size: 0.86rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.cv-preview iframe {
+  width: 100%;
+  flex: 1;
+  min-height: 0;
+  border: 0;
+  background: #f5f7fb;
+}
+
+.download-cv {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 42px;
+  padding: 0 18px;
+  border: 1px solid rgba(124, 231, 255, 0.28);
+  border-radius: 999px;
+  background: rgba(124, 231, 255, 0.055);
+  color: var(--text);
+  font-weight: 800;
+  transition: transform 180ms ease, border-color 180ms ease, background 180ms ease;
+}
+
+.download-cv:hover {
+  transform: translateY(-2px);
+  border-color: rgba(124, 231, 255, 0.7);
+  background: rgba(124, 231, 255, 0.12);
+}
+
+.mobile-download {
+  display: none;
+}

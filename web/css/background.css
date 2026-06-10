@@ -1,0 +1,25 @@
+#circuit-canvas,
+.ambient-glow,
+.dark-scroll-layer {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+}
+
+#circuit-canvas {
+  z-index: 0;
+  opacity: calc(0.58 - (var(--scroll-depth) * 0.28));
+}
+
+.ambient-glow {
+  z-index: 1;
+  background:
+    radial-gradient(circle at 12% 16%, rgba(22, 136, 255, 0.22), transparent 34%),
+    radial-gradient(circle at 82% 28%, rgba(124, 231, 255, 0.12), transparent 30%),
+    linear-gradient(180deg, rgba(7, 17, 30, 0.25), rgba(2, 4, 10, 0.85));
+}
+
+.dark-scroll-layer {
+  z-index: 1;
+  background: rgba(0, 0, 0, calc(var(--scroll-depth) * 0.58));
+}
